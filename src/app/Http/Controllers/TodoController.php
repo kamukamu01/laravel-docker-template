@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Todo;
-use Illuminate\Http\Request;
+use App\Http\Requests\TodoRequest;
 
 class TodoController extends Controller
 {
@@ -26,7 +26,7 @@ class TodoController extends Controller
         return view('todo.create');
     }
 
-    public function store(Request $request)
+    public function store(TodoRequest $request)
     {
         $inputs = $request->all();
         $this->todo->fill($inputs);
