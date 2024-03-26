@@ -3,9 +3,6 @@
 <div class="row justify-content-center">
   <div class="col-md-8">
     @include('layouts.message')
-      <div class="card">
-        <div class="card-header">ToDo編集</div>
-        <div class="card-body">
     <div class="card">
       <div class="card-header">ToDo編集</div>
       <div class="card-body">
